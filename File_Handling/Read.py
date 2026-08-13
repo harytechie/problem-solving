@@ -1,0 +1,7 @@
+file = open(r"D:\py class\File_Handling\Example.txt", "r")
+print(file.read())
+print()
+print(file.readlines())
+print()
+print(file.readline())
+file.close()
