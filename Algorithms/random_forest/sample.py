@@ -13,7 +13,10 @@ X = [
 # 0 = fail, 1 = pass
 y = [0, 0, 0, 1, 1, 1]
 
-model = RandomForestClassifier(n_estimators=10, random_state=42)
+model = RandomForestClassifier(
+    n_estimators=10,
+    random_state=42
+)
 model.fit(X, y)
 
 student = [[4, 80]]

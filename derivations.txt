@@ -1,0 +1,73 @@
+The primary difference is that 
+
+training data :
+    training data is used to teach a machine learning model.
+testing data : 
+    while testing data is used to evaluate how well the model learned.
+
+1. What is Model Comparison?
+
+Model Comparison means comparing different machine learning models to find which model performs better for the same problem.
+
+                        Student Data
+                            ↓
+                        [ KNN | Decision Tree | Random Forest ]
+                            ↓
+                        Compare Performance
+                            ↓
+                        Choose Model
+
+2. Why do we compare models?
+        Because every model will not perform equally well on every dataset.
+
+Example:
+                    ----------------------------
+                    | Model         | Accuracy |
+                    | ------------- | -------- |
+                    | KNN           |      80% |
+                    | Decision Tree |      88% |
+                    | Random Forest |      94% |
+                    ----------------------------
+5. Give Test Data:
+
+                Test Data
+                ↓
+                ───┬───────────────┬─────────────────┬───
+                ↓               ↓                 ↓
+                KNN        Decision Tree     Random Forest
+                ↓               ↓                 ↓
+                Prediction      Prediction       Prediction
+
+6. Find Accuracy:How many predictions are correct?
+                Actual:     Pass Pass Fail Pass
+                Prediction: Pass Fail Fail Pass
+
+Formula:
+
+                Accuracy = Correct Predictions / Total Predictions × 100
+
+                Therefore:
+
+                Accuracy = 3 / 4 × 100 = 75%
+
+                So KNN accuracy = 75%
+
+7. Do the Same for Every Model:
+
+                Decision Tree Accuracy:
+                Actual:     Pass Pass Fail Pass
+                Prediction: Pass Pass Pass Pass
+                Accuracy = 3 / 4 × 100 = 75%
+
+                Random Forest Accuracy:
+                Actual:     Pass Pass Fail Pass
+                Prediction: Pass Pass Fail Pass
+                Accuracy = 4 / 4 × 100 = 100%
+
+8. Create Result Table
+
+            | Model         | Correct Predictions   | Total Predictions | Accuracy (%)  |
+            | :---          | :---:                 | :---:             | :---:         |
+            | KNN           | 3                     | 4                 | 75%           |
+            | Decision Tree | 3                     | 4                 | 75%           |
+            | Random Forest | 4                     | 4                 | 100%          |
